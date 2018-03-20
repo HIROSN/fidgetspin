@@ -1,12 +1,38 @@
 <!doctype html>
 <html>
   <head>
-    <link rel="stylesheet" href="./main.css">
+    <style>
+      #spinner {
+        will-change: transform;
+        flex: auto;
+      }
+      #trace-fast {
+        opacity: 0.000001;
+        will-change: transform;
+      }
+      #spinner img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+      }
+      #trace-fast img {
+        opacity: 0.1;
+      }
+      .spinner-trace-3 {
+        transform: rotate(12deg);
+      }
+      img {
+        width: 400px;
+        height: 400px;
+        background: red;
+      }
+    </style>
   </head>
   <body>
-    <div id='spinner'>
-      <div id='trace-fast'>
-        <img alt="spinner" class='spinner spinner-trace-3' src='./assets/spinners/base.png'>
+    <div id="spinner">
+      <div id="trace-fast">
+        <img class="spinner-trace-3">
       </div>
     </div>
   </body>
