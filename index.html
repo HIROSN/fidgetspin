@@ -2,25 +2,11 @@
 <html>
   <head>
     <style>
-      #spinner {
-        will-change: transform;
-        flex: auto;
-      }
       #trace-fast {
         opacity: 0.000001;
-        will-change: transform;
-      }
-      #spinner img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        pointer-events: none;
-      }
-      #trace-fast img {
-        opacity: 0.1;
       }
       .spinner-trace-3 {
-        transform: rotate(12deg);
+        position: absolute;
       }
       img {
         width: 400px;
@@ -30,10 +16,8 @@
     </style>
   </head>
   <body>
-    <div id="spinner">
-      <div id="trace-fast">
-        <img class="spinner-trace-3">
-      </div>
+    <div id="trace-fast">
+      <img class="spinner-trace-3">
     </div>
   </body>
 </html>
