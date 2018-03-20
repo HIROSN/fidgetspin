@@ -22,5 +22,3 @@ yarn start # starts static server on 80
 
 yarn run # to see other options
 ```
-
-Travis will autodeploy to `gh-pages` when `master` is updated.
